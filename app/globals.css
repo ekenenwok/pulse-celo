@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F1E4;
+  background-image:
+    linear-gradient(rgba(24, 43, 34, 0.035) 1px, transparent 1px);
+  background-size: 100% 42px;
+  color: #182B22;
+}
+
+.rule {
+  border-color: #D8CFB6;
+}
+
+::selection {
+  background: #C79A3E;
+  color: #F6F1E4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #C79A3E;
+  outline-offset: 2px;
+}
